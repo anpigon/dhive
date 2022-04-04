@@ -424,14 +424,14 @@ OperationSerializers.escrow_release = OperationDataSerializer(29, [
   ['who', StringSerializer],
   ['receiver', StringSerializer],
   ['escrow_id', UInt32Serializer],
-  ['hbd_amount', AssetSerializer],
+  ['sbd_amount', AssetSerializer],
   ['steem_amount', AssetSerializer]
 ])
 
 OperationSerializers.escrow_transfer = OperationDataSerializer(27, [
   ['from', StringSerializer],
   ['to', StringSerializer],
-  ['hbd_amount', AssetSerializer],
+  ['sbd_amount', AssetSerializer],
   ['steem_amount', AssetSerializer],
   ['escrow_id', UInt32Serializer],
   ['agent', StringSerializer],

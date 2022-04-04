@@ -1331,7 +1331,7 @@ declare module 'dhive/chain/operation' {
 	        /**
 	         * The amount of hbd to release.
 	         */
-	        hbd_amount: Asset | string;
+	        sbd_amount: Asset | string;
 	        /**
 	         * The amount of hive to release.
 	         */
@@ -1363,7 +1363,7 @@ declare module 'dhive/chain/operation' {
 	        to: string;
 	        agent: string;
 	        escrow_id: number;
-	        hbd_amount: Asset | string;
+	        sbd_amount: Asset | string;
 	        steem_amount: Asset | string;
 	        fee: Asset | string;
 	        ratification_deadline: string;
