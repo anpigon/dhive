@@ -204,7 +204,7 @@ export interface WitnessProps {
   key: PublicKey | string
   maximum_block_size?: number // uint32_t
   new_signing_key?: PublicKey | string | null
-  hbd_exchange_rate?: PriceType
+  sbd_exchange_rate?: PriceType
   sbd_interest_rate?: number // uint16_t
   url?: string
 }
@@ -246,7 +246,7 @@ export function buildWitnessUpdateOp(
       case 'url':
         type = Types.String
         break
-      case 'hbd_exchange_rate':
+      case 'sbd_exchange_rate':
         type = Types.Price
         break
       case 'account_creation_fee':

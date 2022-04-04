@@ -1890,7 +1890,7 @@ declare module 'dhive/utils' {
 	    key: PublicKey | string;
 	    maximum_block_size?: number;
 	    new_signing_key?: PublicKey | string | null;
-	    hbd_exchange_rate?: PriceType;
+	    sbd_exchange_rate?: PriceType;
 	    sbd_interest_rate?: number;
 	    url?: string;
 	}
