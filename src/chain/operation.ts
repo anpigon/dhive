@@ -264,7 +264,7 @@ export interface ClaimRewardBalanceOperation extends Operation {
   0: 'claim_reward_balance' // 39
   1: {
     account: string // account_name_type
-    reward_hive: string | Asset
+    reward_steem: string | Asset
     reward_hbd: string | Asset
     reward_vests: string | Asset
   }

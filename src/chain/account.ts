@@ -115,7 +115,7 @@ export interface Account {
   savings_hbd_last_interest_payment: string // time_point_sec
   savings_withdraw_requests: number // uint8_t
   reward_hbd_balance: string | Asset
-  reward_hive_balance: string | Asset
+  reward_steem_balance: string | Asset
   reward_vesting_balance: string | Asset
   reward_vesting_hive: string | Asset
   curation_rewards: number | string // share_type

@@ -243,7 +243,7 @@ declare module 'dhive/chain/account' {
 	    savings_hbd_last_interest_payment: string;
 	    savings_withdraw_requests: number;
 	    reward_hbd_balance: string | Asset;
-	    reward_hive_balance: string | Asset;
+	    reward_steem_balance: string | Asset;
 	    reward_vesting_balance: string | Asset;
 	    reward_vesting_hive: string | Asset;
 	    curation_rewards: number | string;
@@ -1128,7 +1128,7 @@ declare module 'dhive/chain/operation' {
 	    0: 'claim_reward_balance';
 	    1: {
 	        account: string;
-	        reward_hive: string | Asset;
+	        reward_steem: string | Asset;
 	        reward_hbd: string | Asset;
 	        reward_vests: string | Asset;
 	    };
