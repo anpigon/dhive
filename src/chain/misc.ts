@@ -93,7 +93,7 @@ export interface ChainProperties {
   /**
    * The HBD interest percentage rate decided by witnesses, expressed 0 to 10000.
    */
-  hbd_interest_rate: number // uint16_t
+  sbd_interest_rate: number // uint16_t
 }
 
 export interface VestingDelegation {
@@ -170,7 +170,7 @@ export interface DynamicGlobalProperties {
   /**
    * This property defines the interest rate that HBD deposits receive.
    */
-  hbd_interest_rate: number
+  sbd_interest_rate: number
   hbd_print_rate: number
   /**
    *  Average block size is updated every block to be:

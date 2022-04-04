@@ -205,7 +205,7 @@ export interface WitnessProps {
   maximum_block_size?: number // uint32_t
   new_signing_key?: PublicKey | string | null
   hbd_exchange_rate?: PriceType
-  hbd_interest_rate?: number // uint16_t
+  sbd_interest_rate?: number // uint16_t
   url?: string
 }
 function serialize(serializer: Serializer, data: any) {
@@ -240,7 +240,7 @@ export function buildWitnessUpdateOp(
       case 'maximum_block_size':
         type = Types.UInt32
         break
-      case 'hbd_interest_rate':
+      case 'sbd_interest_rate':
         type = Types.UInt16
         break
       case 'url':

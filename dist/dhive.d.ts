@@ -374,7 +374,7 @@ declare module 'dhive/chain/misc' {
 	    /**
 	     * The HBD interest percentage rate decided by witnesses, expressed 0 to 10000.
 	     */
-	    hbd_interest_rate: number;
+	    sbd_interest_rate: number;
 	}
 	export interface VestingDelegation {
 	    /**
@@ -449,7 +449,7 @@ declare module 'dhive/chain/misc' {
 	    /**
 	     * This property defines the interest rate that HBD deposits receive.
 	     */
-	    hbd_interest_rate: number;
+	    sbd_interest_rate: number;
 	    hbd_print_rate: number;
 	    /**
 	     *  Average block size is updated every block to be:
@@ -1891,7 +1891,7 @@ declare module 'dhive/utils' {
 	    maximum_block_size?: number;
 	    new_signing_key?: PublicKey | string | null;
 	    hbd_exchange_rate?: PriceType;
-	    hbd_interest_rate?: number;
+	    sbd_interest_rate?: number;
 	    url?: string;
 	}
 	export function buildWitnessUpdateOp(owner: string, props: WitnessProps): WitnessSetPropertiesOperation;
