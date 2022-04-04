@@ -927,7 +927,7 @@ declare module 'dhive/chain/comment' {
 	    net_votes: number;
 	    root_comment: number;
 	    max_accepted_payout: string;
-	    percent_hbd: number;
+	    percent_steem_dollars: number;
 	    allow_replies: boolean;
 	    allow_votes: boolean;
 	    allow_curation_rewards: boolean;
@@ -1164,7 +1164,7 @@ declare module 'dhive/chain/operation' {
 	        /** HBD value of the maximum payout this post will receive. */
 	        max_accepted_payout: Asset | string;
 	        /** The percent of Hive Dollars to key, unkept amounts will be received as Hive Power. */
-	        percent_hbd: number;
+	        percent_steem_dollars: number;
 	        /** Whether to allow post to receive votes. */
 	        allow_votes: boolean;
 	        /** Whether to allow post to recieve curation rewards. */

@@ -303,7 +303,7 @@ export interface CommentOptionsOperation extends Operation {
     /** HBD value of the maximum payout this post will receive. */
     max_accepted_payout: Asset | string
     /** The percent of Hive Dollars to key, unkept amounts will be received as Hive Power. */
-    percent_hbd: number // uint16_t
+    percent_steem_dollars: number // uint16_t
     /** Whether to allow post to receive votes. */
     allow_votes: boolean
     /** Whether to allow post to recieve curation rewards. */

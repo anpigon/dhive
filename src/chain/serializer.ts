@@ -330,7 +330,7 @@ OperationSerializers.comment_options = OperationDataSerializer(19, [
   ['author', StringSerializer],
   ['permlink', StringSerializer],
   ['max_accepted_payout', AssetSerializer],
-  ['percent_hbd', UInt16Serializer],
+  ['percent_steem_dollars', UInt16Serializer],
   ['allow_votes', BooleanSerializer],
   ['allow_curation_rewards', BooleanSerializer],
   [
