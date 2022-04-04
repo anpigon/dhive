@@ -483,7 +483,7 @@ export interface EscrowReleaseOperation extends Operation {
     /**
      * The amount of hive to release.
      */
-    hive_amount: Asset | string
+    steem_amount: Asset | string
   }
 }
 
@@ -513,7 +513,7 @@ export interface EscrowTransferOperation extends Operation {
     agent: string // account_name_type
     escrow_id: number // uint32_t
     hbd_amount: Asset | string
-    hive_amount: Asset | string
+    steem_amount: Asset | string
     fee: Asset | string
     ratification_deadline: string // time_point_sec
     escrow_expiration: string // time_point_sec
